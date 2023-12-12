@@ -18,6 +18,11 @@ Clara Xu
       h1 {
         width: 100%;
       }
+      
+      h2 {
+        color: #5E72eb; 
+        width: auto;
+      }
 
       #nav {
         background-color: #FFF;
@@ -47,14 +52,6 @@ Clara Xu
         display: inline-block;
         margin-right: 25px;
       }
-
-      ul li a {
-        color: #000000
-      }
-      
-      li a:hover {
-        color: #5E72eb;
-      }
       
       footer {
       background-color: #5E72eb;
@@ -63,20 +60,29 @@ Clara Xu
       padding: 5px; 
     	}
       
+      p {
+        font-size: 12pt;
+      }
+      
       p a{
         color: white;
+      }
+      
+      ul li a {
+        color: #000000
+      }
+      
+      li a:hover {
+        color: #5E72eb;
       }
       
       p a:hover {
         color: yellow;
       }
       
-      #intro{
+      #about-toby{
         background-color: #FFFFFF;
-        width: 100%;
-        padding-top: 20px;
-        padding-bottom: 40px;
-        
+        width: auto;
       }
       
     </style>
@@ -95,54 +101,24 @@ Clara Xu
       </ul>
     </div>
 
-    <!--
-    Code copied from: https://www.w3schools.com/w3css/w3css_slideshow.asp
-    Author: w3schools.com
-    Name: Automatic slideshow
-    Description: Displays an automatic (animated) slideshow.
-    Date retrieved: Dec. 11, 2023
-    -->
-
-    <!-- Copied code starts -->
-
-    <div class="w3-content w3-section">
-      <img class="mySlides" src="slideshow1.JPG" alt="Toby Slide 1" style="width:100%">
-      <img class="mySlides" src="slideshow2.JPG" alt="Stewie Slide 1" style="width:100%">
-      <img class="mySlides" src="slideshow3.JPG" alt="Toby Slide 2" style="width:100%">
-      <img class="mySlides" src="slideshow4.JPG" alt="Stewie Slide 2" style="width:100%">
-      <img class="mySlides" src="slideshow5.JPG" alt="Toby Slide 3" style="width:100%">
-    </div>
-
-    <script>
-      let myIndex = 0;
-      carousel();
-
-      function carousel() {
-        let i;
-        let x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {
-          myIndex = 1
-        }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 2000); // Change image every 2 seconds
-      }
-    </script>
-    <!-- Copied code ends -->
-		<div id="intro">
-      <h1>Welcome to <span style="color:#5E72eb;font-weight:bold">Clara's Cats!</span></h1>
-      <h2>
-        
-        Clara's Cats is all about my 2 cats, <span style="color:#5E72eb;font-weight:bold">Toby</span> and <span style="color:#5E72eb;font-weight:bold">Stewie</span>. 
-      </h2>
+		<div id="about-toby">
+      <h1>About</h1>
+      <h2>Toby</h2>
+      <img src="about-toby.JPEG" alt="about toby" style="width:100%;padding-bottom:15px;">
       <p>
-        On this website, you can find information about them, the story of how I got them, and find many cute and funny pictures!
+        Meet Toby! He is a 5 year old Domestic Shorthair. He has black and <span style="color:#ffffff;background:#000000;">white</span> fur with <span style="color:pink">pink</span> paws. 
+        Some people say the black fur on his head looks like curtain bangs. He is big in size but he has a chiseled face like a handsome man!
+        <br><br>Toby is a scaredy cat that also LOVES to go outside. Whenever he goes out, he doesn't come back for a while but he always finds his way home. Sometimes, he may bring home a mouse he's caught for the day.
+        He loves to show his family the mouse he proudly caught but we would prefer if he keeps it outside!
       </p>
     </div>
-    
+    <div id="about-stewie">
+      <h2>Stewie</h2>
+      <img src="about-stewie.jpg" alt="about stewie" style="width:100%;padding-bottom:15px;">
+      <p>
+        This is Stewie!
+      </p>
+    </div>
 
     
     <footer>
